@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Coding For Beginners</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #000;
+            color: #fff;
+            padding: 120px;
+        }
+        header h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+        header p {
+            font-size: 20px;
+            color: #aaa;
+        }
+        .filters {
+            background-color: #fff;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            border-bottom: 1px solid #ddd;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .filters button {
+            background-color: #f4f4f4;
+            border: 1px solid #ccc;
+            padding: 8px 16px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .filters button.active {
+            background-color: #007BFF;
+            color: #fff;
+            border-color: #007BFF;
+        }
+        .filters input[type="text"] {
+            flex: 1;
+            padding: 8px 15px;
+            border: 1px solid #ccc;
+            border-radius: 20px;
+            font-size: 16px;
+        }
+        .filters select {
+            padding: 8px 12px;
+            border: 1px solid #ccc;
+            border-radius: 20px;
+            font-size: 16px;
+        }
+        .content {
+            padding: 20px;
+            display: flex;
+            gap: 20px;
+        }
+        .problems-section {
+            flex: 3;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .problems-section h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .problems-section table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .problems-section table th,
+        .problems-section table td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        .problems-section table th {
+            background-color: #f9f9f9;
+            font-weight: bold;
+            font-size :medium
+        }
+        .problems-section a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+        .problems-section a:hover {
+            text-decoration: underline;
+        }
+        .overview-section {
+            flex: 1;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .overview-section h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .score-circle {
+            width: 150px;
+            height: 150px;
+            margin: 0 auto;
+            border: 10px solid #ddd;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 50px;
+            font-weight: bold;
+            color: #666;
+        }
+        .overview-details {
+            margin-top: 20px;
+            font-size: 20px;
+        }
+        .overview-details div {
+            margin: 10px 0;
+        }
+        .checkbox-cell {
+            font-family: 'Arial', sans-serif; 
+            font-size:10px; /* Set the font size */
+            font-weight: bold; /* Optional: Make the text bold */
+            color: #555; /* Optional: Change the text color */
+            text-align: center; /* Ensure text aligns correctly */
+            vertical-align: middle;
+        }
+        table 
+        {
+            font-size: 22px; /* Adjust this value for overall table text size */
+            font-family: Arial, sans-serif; /* Set a uniform font */
+        }
+
+        th, td ,tr
+        {
+            font-size: 22px; 
+            text-align: left; 
+        }
+        input[type="checkbox"] {
+            transform: scale(1.5); 
+            margin-right: 10px; 
+        }
+         th {
+            background-color: #f4f4f4;
+            font-weight: bold;
+            font-size: 28px; /* Increased font size for table headers */
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Basic Coding For Beginners</h1>
+        <p>Problems | Data Structures & Algorithms</p>
+    </header>
+    <!-- Filters Section -->
+    <div class="filters">
+        <button class="active">All</button>
+        <button>Solved</button>
+        <button>Unsolved</button>
+        <input type="text" placeholder="Search for a problem">
+        <select>
+            <option value="difficulty">Difficulty</option>
+            <option value="beginner">Beginner</option>
+            <option value="intermediate">Intermediate</option>
+            <option value="advanced">Advanced</option>
+        </select>
+    </div>
+    <!-- Content Section -->
+    <div class="content">
+        <div class="problems-section">
+            <h2>All Problems</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th class="checkbox-cell">✔</th>
+                        <th>Problem Name</th>
+                        <th>Difficulty</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="checkbox-cell"><input type="checkbox"></td>
+                        <td><a href="https://workat.tech/problem-solving/practice/first-code" target="_blank">My First Code</a></td>
+                        <td>Beginner</td>
+                    </tr>
+                    <tr>
+                        <td class="checkbox-cell"><input type="checkbox"></td>
+                        <td><a href="https://workat.tech/problem-solving/practice/one-to-ten" target="_blank">One To Ten</a></td>
+
+                        <td>Beginner</td>
+                    </tr>
+                    <tr>
+                        <td class="checkbox-cell"><input type="checkbox"></td>
+                        <td><a href="https://workat.tech/problem-solving/practice/sum-ten" target="_blank">Sum-Ten</a></td>
+    
+                        <td>Beginner</td>
+                    </tr>
+                    <tr>
+                        <td class="checkbox-cell"><input type="checkbox"></td>
+                        <td><a href="https://workat.tech/problem-solving/practice/odd-even" target="_blank">Odd-Even</a></td>
+                        
+                        <td>Beginner</td>
+                    </tr>
+                    <tr>
+                        <td class="checkbox-cell"><input type="checkbox"></td>
+                        <td><a href="https://workat.tech/problem-solving/practice/average-weight" target="_blank">Average-Weight</a></td>
+                        
+                        <td>Beginner</td>
+                    </tr>
+                    <tr>
+                        <td class="checkbox-cell"><input type="checkbox"></td>
+                        <td><a href="https://workat.tech/problem-solving/practice/vowels" target="_blank">Vowels</a></td>
+                        
+                        <td>Beginner</td>
+                    </tr>
+                    <tr>
+                        <td class="checkbox-cell"><input type="checkbox"></td>
+                        <td><a href="https://workat.tech/problem-solving/practice/reverse-order" target="_blank">Reverse-Order</a></td>
+                        <td>Beginner</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        </div>
+    </div>
+</body>
+</html>
+ 
