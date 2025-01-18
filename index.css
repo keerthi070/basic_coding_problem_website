@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+header {
+    background-color: #000;
+    color: #fff;
+    padding: 120px;
+}
+header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+header p {
+    font-size: 20px;
+    color: #aaa;
+}
+.filters {
+    background-color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    border-bottom: 1px solid #ddd;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+   
+}
+.filters button {
+    background-color: #f4f4f4;
+    border: 1px solid #ccc;
+    padding: 8px 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.filters button.active {
+    background-color: #007BFF;
+    color: #fff;
+    border-color: #007BFF;
+}
+.filters input[type="text"] {
+    flex: 1;
+    padding: 8px 15px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    font-size: 16px;
+}
+.filters select {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    font-size: 16px;
+}
+.content {
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+}
+.problems-section {
+    flex: 3;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.problems-section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.problems-section table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.problems-section table th,
+.problems-section table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+.problems-section table th {
+    background-color: #f9f9f9;
+    font-weight: bold;
+    font-size :medium
+}
+.problems-section a {
+    color: #007BFF;
+    text-decoration: none;
+}
+.problems-section a:hover {
+    text-decoration: underline;
+}
+.overview-section {
+    flex: 1;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.overview-section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.score-circle {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    border: 10px solid #ddd;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    font-weight: bold;
+    color: #666;
+}
+.overview-details {
+    margin-top: 20px;
+    font-size: 20px;
+}
+.overview-details div {
+    margin: 10px 0;
+}
+.checkbox-cell {
+    font-family: 'Arial', sans-serif; 
+    font-size:35px; 
+    font-weight: bold; 
+    color: #555;
+    text-align: center; 
+    vertical-align: middle;
+}
+table 
+{
+    font-size: 22px; /* Adjust this value for overall table text size */
+    font-family: Arial, sans-serif; /* Set a uniform font */
+}
+table th {
+    background-color: #007BFF;
+    color: rgb(11, 11, 11);
+    font-size: 50px; /* Title font size */
+    height: 60px; /* Title box height */
+    padding: 15px; /* Padding inside the title box */
+    text-align: left;
+}
+td ,tr
+{
+    font-size: 22px; 
+    text-align: left; 
+}
+/*td, th {
+    border: 1px solid #ddd;
+    padding: 10px;
+}*/
+input[type="checkbox"] {
+    transform: scale(1.5); 
+    margin-right: 10px; 
+}
+th {
+    background-color: #007BFF;
+    color: rgb(11, 11, 11);
+    font-size: 50px; /* Adjust title font size */
+    height: 60px; /* Adjust title box height */
+    padding: 15px; /* Add padding to increase the size */
+    text-align: left;
+}
